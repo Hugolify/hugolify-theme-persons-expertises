@@ -11,6 +11,8 @@ module:
 
 # Default
 permalinks:
-  statutes: /team/expertises/:slug/
+  persons_expertises: /team/expertises/:slug/
+  section: 
+    persons_expertises: /team/expertises/
 taxonomies:
   persons_expertise: persons_expertises
