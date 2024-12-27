@@ -1,3 +1,3 @@
 module github.com/hugolify/hugolify-theme-persons-expertises
 
-go 1.19
+go 1.21
