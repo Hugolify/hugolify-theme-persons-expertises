@@ -11,8 +11,9 @@ module:
 
 # Default
 permalinks:
-  persons_expertises: /team/expertises/:slug/
-  section: 
+  taxonomy: 
     persons_expertises: /team/expertises/
+  term:
+    persons_expertises: /team/expertises/:slug/
 taxonomies:
   persons_expertise: persons_expertises
