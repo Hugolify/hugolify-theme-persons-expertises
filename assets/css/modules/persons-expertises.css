@@ -1,0 +1,12 @@
+/* css/modules/persons-expertises.css — hugolify-theme-persons-expertises entry point */
+
+/* Tokens */
+@import '../tokens/persons-expertises.css';
+
+/* Components */
+@import '../components/persons-expertise.css';
+@import '../components/persons-expertises.css';
+
+/* Pages */
+@import '../pages/persons-expertise.css';
+@import '../pages/persons-expertises.css';
