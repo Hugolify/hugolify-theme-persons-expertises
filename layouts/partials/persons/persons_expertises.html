@@ -6,7 +6,7 @@
     <h2>{{ i18n "expertises.title" $count }}</h2>
     <ul>
       {{ range . }}
-        {{ $expertise := partial "func/GetRealExpertise" . }}
+        {{- $expertise := partial "func/GetRealExpertise" . }}
         {{ with $expertise }}
           <li>
             {{- with .Params.image}}
