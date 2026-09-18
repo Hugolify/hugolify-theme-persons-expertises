@@ -1,5 +1,18 @@
+{{/* An item of this list is a taxonomy term, and a term only carries a key: the
+  label lives in the matching page of the expertises section, translated. Same
+  resolution as commons/filters/taxonomy.html, including humanize, which is only
+  for a term that resolves to nothing, where the raw key is all there is to show.
+  Applied to a real title it mangles it, "Corporate M&A Private Equity" coming
+  back as "Corporate m& a private equity".
+
+  The link stays on the term, which lists the lawyers of that expertise. */}}
+{{- $page := partial "func/GetRealContext" . }}
+{{- $title := partial "func/PrepareHTML.html" $page.Title }}
+{{- if not $page.File }}
+  {{- $title = $title | humanize }}
+{{- end }}
 <a href="{{ .Permalink }}" itemprop="url" class="content">
-  <p class="title" itemprop="name">{{ partial "func/PrepareHTML.html" .Title | humanize }}</p>
+  <p class="title" itemprop="name">{{ $title }}</p>
   {{ partial "commons/item/result.html" . }}
   {{ partialCached "commons/item/more.html" . }}
 </a>
