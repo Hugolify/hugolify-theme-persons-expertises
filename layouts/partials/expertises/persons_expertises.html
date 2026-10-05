@@ -2,7 +2,7 @@
 {{- $pages := partial "func/GetPagesFromTaxonomy" (dict
   "section" $section
   "taxonomy" "persons_expertises"
-  "slug" .File.TranslationBaseName
+  "slug" .File.ContentBaseName
   "title" .Title) }}
 {{- $pages = partial "func/GetPersonsOrderByStatutes" $pages }}
 
