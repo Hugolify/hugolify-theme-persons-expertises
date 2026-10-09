@@ -11,8 +11,8 @@
 {{- if not $page.File }}
   {{- $title = $title | humanize }}
 {{- end }}
-<a href="{{ .Permalink }}" itemprop="url" class="content">
-  <p class="title" itemprop="name">{{ $title }}</p>
+<a href="{{ .Permalink }}" class="content">
+  <p class="title">{{ $title }}</p>
   {{ partial "commons/item/result.html" . }}
   {{ partialCached "commons/item/more.html" . }}
 </a>
